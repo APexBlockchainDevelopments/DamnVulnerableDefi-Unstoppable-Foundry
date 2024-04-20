@@ -71,6 +71,7 @@ contract UnstoppableTest is Test {
 }
 
 
+//Mock Token for scripting purposes
 contract MockERC20 is ERC20{
     constructor(uint256 initialSupply)ERC20("DamnValuableToken", "DVT", 18){
         _mint(msg.sender, initialSupply);
